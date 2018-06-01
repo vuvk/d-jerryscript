@@ -1,0 +1,1061 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="jerry-core" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="CMake Files\;CMake Files\jerry-libc\;CMake Files\jerry-libm\;CMake Files\jerry-core\;CMake Files\jerry-port\;CMake Files\jerry-port\default\;CMake Files\jerry-ext\;CMake Files\jerry-main\;" />
+		<Build>
+			<Target title="all">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-core/Makefile&quot;  VERBOSE=1 all' />
+					<CompileFile command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-core/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-core/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="jerry-core">
+				<Option output="D:/jerryscript/build/lib/libjerry-core.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="./" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DJERRY_NDEBUG" />
+					<Add option="-DJERRY_CPOINTER_32_BIT" />
+					<Add option="-DPARSER_DUMP_BYTE_CODE" />
+					<Add option="-DCONFIG_DISABLE_ES2015" />
+					<Add option="-DREGEXP_DUMP_BYTE_CODE" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_EXEC" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_SAVE" />
+					<Add option="-DJERRY_VM_EXEC_STOP" />
+					<Add option="-DCONFIG_MEM_HEAP_AREA_SIZE=5242880" />
+					<Add directory="D:/jerryscript/jerry-core" />
+					<Add directory="D:/jerryscript/jerry-core/api" />
+					<Add directory="D:/jerryscript/jerry-core/debugger" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/base" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/builtin-objects" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/builtin-objects/typedarray" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/operations" />
+					<Add directory="D:/jerryscript/jerry-core/include" />
+					<Add directory="D:/jerryscript/jerry-core/jcontext" />
+					<Add directory="D:/jerryscript/jerry-core/jmem" />
+					<Add directory="D:/jerryscript/jerry-core/jrt" />
+					<Add directory="D:/jerryscript/jerry-core/lit" />
+					<Add directory="D:/jerryscript/jerry-core/parser/js" />
+					<Add directory="D:/jerryscript/jerry-core/parser/regexp" />
+					<Add directory="D:/jerryscript/jerry-core/vm" />
+					<Add directory="D:/jerryscript/jerry-libm/include" />
+					<Add directory="D:/jerryscript/jerry-libc/include" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-core/Makefile&quot;  VERBOSE=1 jerry-core' />
+					<CompileFile command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-core/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-core/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="jerry-core/fast">
+				<Option output="D:/jerryscript/build/lib/libjerry-core.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="./" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DJERRY_NDEBUG" />
+					<Add option="-DJERRY_CPOINTER_32_BIT" />
+					<Add option="-DPARSER_DUMP_BYTE_CODE" />
+					<Add option="-DCONFIG_DISABLE_ES2015" />
+					<Add option="-DREGEXP_DUMP_BYTE_CODE" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_EXEC" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_SAVE" />
+					<Add option="-DJERRY_VM_EXEC_STOP" />
+					<Add option="-DCONFIG_MEM_HEAP_AREA_SIZE=5242880" />
+					<Add directory="D:/jerryscript/jerry-core" />
+					<Add directory="D:/jerryscript/jerry-core/api" />
+					<Add directory="D:/jerryscript/jerry-core/debugger" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/base" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/builtin-objects" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/builtin-objects/typedarray" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/operations" />
+					<Add directory="D:/jerryscript/jerry-core/include" />
+					<Add directory="D:/jerryscript/jerry-core/jcontext" />
+					<Add directory="D:/jerryscript/jerry-core/jmem" />
+					<Add directory="D:/jerryscript/jerry-core/jrt" />
+					<Add directory="D:/jerryscript/jerry-core/lit" />
+					<Add directory="D:/jerryscript/jerry-core/parser/js" />
+					<Add directory="D:/jerryscript/jerry-core/parser/regexp" />
+					<Add directory="D:/jerryscript/jerry-core/vm" />
+					<Add directory="D:/jerryscript/jerry-libm/include" />
+					<Add directory="D:/jerryscript/jerry-libc/include" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-core/Makefile&quot;  VERBOSE=1 jerry-core/fast' />
+					<CompileFile command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-core/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-core/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-core/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="win32_dll">
+				<Option output="jerry-core" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="1" extension_auto="1" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-flto" />
+					<Add option="-std=c99" />
+					<Add option="-fPIC" />
+					<Add option="-m32" />
+					<Add option="-DJERRY_NDEBUG" />
+					<Add option="-DJERRY_ENABLE_ERROR_MESSAGES" />
+					<Add option="-DJERRY_CPOINTER_32_BIT" />
+					<Add option="-DPARSER_DUMP_BYTE_CODE" />
+					<Add option="-DCONFIG_ENABLE_ES2015" />
+					<Add option="-DREGEXP_DUMP_BYTE_CODE" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_EXEC" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_SAVE" />
+					<Add option="-DJERRY_VM_EXEC_STOP" />
+					<Add option="-DCONFIG_MEM_HEAP_AREA_SIZE=5242880" />
+					<Add option="-DJERRY_ENABLE_LINE_INFO" />
+					<Add option="-DJMEM_STATS" />
+					<Add directory="../../jerry-core/include" />
+					<Add directory="../../jerry-core/ecma/operations" />
+					<Add directory="../../jerry-core/debugger" />
+					<Add directory="../../jerry-core/api" />
+					<Add directory="../../jerry-core/ecma/base" />
+					<Add directory="../../jerry-core/ecma/builtin-objects" />
+					<Add directory="../../jerry-core" />
+					<Add directory="../../jerry-core/jrt" />
+					<Add directory="../../jerry-core/jcontext" />
+					<Add directory="../../jerry-core/jmem" />
+					<Add directory="../../jerry-core/lit" />
+					<Add directory="../../jerry-core/parser/js" />
+					<Add directory="../../jerry-core/parser/regexp" />
+					<Add directory="../../jerry-core/vm" />
+					<Add directory="../../jerry-core/ecma/builtin-objects/typedarray" />
+				</Compiler>
+				<Linker>
+					<Add option="-O3" />
+					<Add option="-flto" />
+					<Add option="-s" />
+					<Add option="-static-libgcc" />
+					<Add option="-m32" />
+					<Add library="../lib/libjerry-port-default.a" />
+					<Add directory="../lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../../CMakeLists.txt">
+			<Option virtualFolder="CMake Files/" />
+			<Option target="all" />
+			<Option target="jerry-core" />
+			<Option target="jerry-core/fast" />
+		</Unit>
+		<Unit filename="../../jerry-core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/jerry-core/" />
+			<Option target="all" />
+			<Option target="jerry-core" />
+			<Option target="jerry-core/fast" />
+		</Unit>
+		<Unit filename="../../jerry-core/api/jerry-debugger.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/api/jerry-snapshot.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/api/jerry-snapshot.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/api/jerry.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/debugger/debugger-sha1.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/debugger/debugger-ws.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/debugger/debugger-ws.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/debugger/debugger.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/debugger/debugger.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-alloc.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-alloc.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-gc.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-gc.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-helpers-conversion.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-helpers-errol.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-helpers-external-pointers.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-helpers-number.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-helpers-string.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-helpers-value.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-helpers-values-collection.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-helpers.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-helpers.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-init-finalize.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-init-finalize.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-lcache.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-lcache.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-literal-storage.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-literal-storage.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-property-hashmap.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/base/ecma-property-hashmap.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-array-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-array.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-arraybuffer-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-arraybuffer.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-boolean-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-boolean.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-date-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-date.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-error-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-error.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-evalerror-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-evalerror.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-function-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-function.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-global.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-helpers-date.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-helpers-error.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-helpers-json.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-helpers.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-helpers.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-json.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-math.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-number-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-number.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-object-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-object.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-promise-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-promise.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-rangeerror-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-rangeerror.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-referenceerror-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-referenceerror.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-regexp-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-regexp.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-string-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-string.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-syntaxerror-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-syntaxerror.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-type-error-thrower.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-typeerror-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-typeerror.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-urierror-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtin-urierror.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtins.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/ecma-builtins.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-float32array-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-float32array.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-float64array-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-float64array.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-int16array-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-int16array.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-int32array-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-int32array.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-int8array-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-int8array.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-typedarray-helpers.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-typedarray-helpers.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-typedarray-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-typedarray.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint16array-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint16array.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint32array-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint32array.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint8array-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint8array.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint8clampedarray-prototype.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/builtin-objects/typedarray/ecma-builtin-uint8clampedarray.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-array-object.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-array-object.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-arraybuffer-object.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-arraybuffer-object.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-boolean-object.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-boolean-object.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-comparison.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-comparison.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-conversion.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-conversion.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-eval.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-eval.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-exceptions.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-exceptions.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-function-object.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-function-object.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-get-put-value.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-jobqueue.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-jobqueue.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-lex-env.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-lex-env.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-number-arithmetic.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-number-arithmetic.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-number-object.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-number-object.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-objects-arguments.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-objects-arguments.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-objects-general.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-objects-general.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-objects.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-objects.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-promise-object.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-promise-object.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-reference.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-reference.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-regexp-object.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-regexp-object.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-string-object.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-string-object.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-typedarray-object.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/ecma/operations/ecma-typedarray-object.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/jcontext/jcontext.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/jcontext/jcontext.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/jmem/jmem-allocator.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/jmem/jmem-heap.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/jmem/jmem-poolman.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/jrt/jrt-fatals.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/lit/lit-char-helpers.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/lit/lit-char-helpers.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/lit/lit-magic-strings.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/lit/lit-magic-strings.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/lit/lit-strings.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/lit/lit-strings.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/parser/js/byte-code.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/parser/js/byte-code.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/parser/js/common.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/parser/js/common.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/parser/js/js-lexer.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/parser/js/js-lexer.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/parser/js/js-parser-expr.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/parser/js/js-parser-mem.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/parser/js/js-parser-scanner.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/parser/js/js-parser-statm.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/parser/js/js-parser-util.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/parser/js/js-parser.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/parser/js/js-parser.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/parser/regexp/re-bytecode.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/parser/regexp/re-bytecode.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/parser/regexp/re-compiler.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/parser/regexp/re-compiler.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/parser/regexp/re-parser.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/parser/regexp/re-parser.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/vm/opcodes-ecma-arithmetics.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/vm/opcodes-ecma-bitwise.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/vm/opcodes-ecma-relational-equality.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/vm/opcodes.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/vm/opcodes.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/vm/vm-stack.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/vm/vm-stack.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/vm/vm-utils.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/vm/vm.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-core/vm/vm.h">
+			<Option target="jerry-core" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../jerry-ext/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/jerry-ext/" />
+			<Option target="all" />
+			<Option target="jerry-core" />
+			<Option target="jerry-core/fast" />
+		</Unit>
+		<Unit filename="../../jerry-libc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/jerry-libc/" />
+			<Option target="all" />
+			<Option target="jerry-core" />
+			<Option target="jerry-core/fast" />
+		</Unit>
+		<Unit filename="../../jerry-libm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/jerry-libm/" />
+			<Option target="all" />
+			<Option target="jerry-core" />
+			<Option target="jerry-core/fast" />
+		</Unit>
+		<Unit filename="../../jerry-main/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/jerry-main/" />
+			<Option target="all" />
+			<Option target="jerry-core" />
+			<Option target="jerry-core/fast" />
+		</Unit>
+		<Unit filename="../../jerry-port/default/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/jerry-port/default/" />
+			<Option target="all" />
+			<Option target="jerry-core" />
+			<Option target="jerry-core/fast" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,106 @@
+# depslib dependency file v1.0
+1527771721 source:c:\mozilla-build\msys\home\shcherbatykh\jerryscript\jerry-main\cli.c
+	<stdio.h>
+	<stdlib.h>
+	"cli.h"
+
+1527771721 c:\mozilla-build\msys\home\shcherbatykh\jerryscript\jerry-main\cli.h
+	<string.h>
+
+1527780505 source:c:\mozilla-build\msys\home\shcherbatykh\jerryscript\jerry-main\main-unix.c
+	<assert.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<setjmp.h>
+	"jerryscript.h"
+	"jerryscript-ext/handler.h"
+	"jerryscript-port.h"
+	"jerryscript-port-default.h"
+	"cli.h"
+
+1527771721 c:\mozilla-build\msys\home\shcherbatykh\jerryscript\jerry-core\include\jerryscript.h
+	"jerryscript-core.h"
+	"jerryscript-debugger.h"
+	"jerryscript-snapshot.h"
+
+1527771721 c:\mozilla-build\msys\home\shcherbatykh\jerryscript\jerry-core\include\jerryscript-core.h
+	<stdbool.h>
+	<stddef.h>
+	<stdint.h>
+	"jerryscript-compiler.h"
+
+1527771721 c:\mozilla-build\msys\home\shcherbatykh\jerryscript\jerry-core\include\jerryscript-compiler.h
+
+1527771721 c:\mozilla-build\msys\home\shcherbatykh\jerryscript\jerry-core\include\jerryscript-debugger.h
+	<stdbool.h>
+
+1527771721 c:\mozilla-build\msys\home\shcherbatykh\jerryscript\jerry-core\include\jerryscript-snapshot.h
+	"jerryscript-core.h"
+
+1527771721 c:\mozilla-build\msys\home\shcherbatykh\jerryscript\jerry-ext\include\jerryscript-ext\handler.h
+	"jerryscript.h"
+
+1527771721 c:\mozilla-build\msys\home\shcherbatykh\jerryscript\jerry-core\include\jerryscript-port.h
+	<stdbool.h>
+	<stdint.h>
+	<stdio.h>
+	"jerryscript-compiler.h"
+
+1527771721 c:\mozilla-build\msys\home\shcherbatykh\jerryscript\jerry-port\default\include\jerryscript-port-default.h
+	"jerryscript.h"
+	"jerryscript-port.h"
+	<stdbool.h>
+
+1527743237 source:d:\jerryscript\jerry-main\cli.c
+	<stdio.h>
+	<stdlib.h>
+	"cli.h"
+
+1527743237 d:\jerryscript\jerry-main\cli.h
+	<string.h>
+
+1527847432 source:d:\jerryscript\jerry-main\main-unix.c
+	<assert.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"jerryscript.h"
+	"jerryscript-ext/handler.h"
+	"jerryscript-port.h"
+	"jerryscript-port-default.h"
+	"cli.h"
+
+1527743237 d:\jerryscript\jerry-core\include\jerryscript.h
+	"jerryscript-core.h"
+	"jerryscript-debugger.h"
+	"jerryscript-snapshot.h"
+
+1527743237 d:\jerryscript\jerry-core\include\jerryscript-core.h
+	<stdbool.h>
+	<stddef.h>
+	<stdint.h>
+	"jerryscript-compiler.h"
+
+1527743237 d:\jerryscript\jerry-core\include\jerryscript-compiler.h
+
+1527743237 d:\jerryscript\jerry-core\include\jerryscript-debugger.h
+	<stdbool.h>
+
+1527743237 d:\jerryscript\jerry-core\include\jerryscript-snapshot.h
+	"jerryscript-core.h"
+
+1527743237 d:\jerryscript\jerry-ext\include\jerryscript-ext\handler.h
+	"jerryscript.h"
+
+1527743237 d:\jerryscript\jerry-core\include\jerryscript-port.h
+	<stdbool.h>
+	<stdint.h>
+	<stdio.h>
+	"jerryscript-compiler.h"
+
+1527743237 d:\jerryscript\jerry-port\default\include\jerryscript-port-default.h
+	"jerryscript.h"
+	"jerryscript-port.h"
+	<stdbool.h>
+

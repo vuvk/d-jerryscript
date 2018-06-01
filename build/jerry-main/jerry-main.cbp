@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="jerry-main" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="CMake Files\;CMake Files\jerry-core\;CMake Files\jerry-port\;CMake Files\jerry-port\default\;CMake Files\jerry-ext\;CMake Files\jerry-main\;" />
+		<Build>
+			<Target title="all">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 all' />
+					<CompileFile command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="jerry">
+				<Option output="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/bin/jerry.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/bin/" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option='-DJERRY_COMMIT_HASH=&quot; ()&quot;' />
+					<Add option="-DJERRY_NDEBUG" />
+					<Add option="-DJERRY_CPOINTER_32_BIT" />
+					<Add option="-DJERRY_ENABLE_ERROR_MESSAGES" />
+					<Add option="-DJERRY_ENABLE_LINE_INFO" />
+					<Add option="-DPARSER_DUMP_BYTE_CODE" />
+					<Add option="-DCONFIG_DISABLE_ES2015" />
+					<Add option="-DREGEXP_DUMP_BYTE_CODE" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_EXEC" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_SAVE" />
+					<Add option="-DCONFIG_MEM_HEAP_AREA_SIZE=5242880" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/api" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/debugger" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/ecma/base" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/ecma/builtin-objects" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/ecma/builtin-objects/typedarray" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/ecma/operations" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/include" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/jcontext" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/jmem" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/jrt" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/lit" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/parser/js" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/parser/regexp" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/vm" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-ext/include" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-port/default/include" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 jerry' />
+					<CompileFile command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="jerry/fast">
+				<Option output="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/bin/jerry.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/bin/" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option='-DJERRY_COMMIT_HASH=&quot; ()&quot;' />
+					<Add option="-DJERRY_NDEBUG" />
+					<Add option="-DJERRY_CPOINTER_32_BIT" />
+					<Add option="-DJERRY_ENABLE_ERROR_MESSAGES" />
+					<Add option="-DJERRY_ENABLE_LINE_INFO" />
+					<Add option="-DPARSER_DUMP_BYTE_CODE" />
+					<Add option="-DCONFIG_DISABLE_ES2015" />
+					<Add option="-DREGEXP_DUMP_BYTE_CODE" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_EXEC" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_SAVE" />
+					<Add option="-DCONFIG_MEM_HEAP_AREA_SIZE=5242880" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/api" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/debugger" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/ecma/base" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/ecma/builtin-objects" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/ecma/builtin-objects/typedarray" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/ecma/operations" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/include" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/jcontext" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/jmem" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/jrt" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/lit" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/parser/js" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/parser/regexp" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/vm" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-ext/include" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-port/default/include" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 jerry/fast' />
+					<CompileFile command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="jerry-snapshot">
+				<Option output="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/bin/jerry-snapshot.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/bin/" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option='-DJERRY_COMMIT_HASH=&quot; ()&quot;' />
+					<Add option="-DJERRY_NDEBUG" />
+					<Add option="-DJERRY_CPOINTER_32_BIT" />
+					<Add option="-DJERRY_ENABLE_ERROR_MESSAGES" />
+					<Add option="-DJERRY_ENABLE_LINE_INFO" />
+					<Add option="-DPARSER_DUMP_BYTE_CODE" />
+					<Add option="-DCONFIG_DISABLE_ES2015" />
+					<Add option="-DREGEXP_DUMP_BYTE_CODE" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_EXEC" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_SAVE" />
+					<Add option="-DCONFIG_MEM_HEAP_AREA_SIZE=5242880" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/api" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/debugger" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/ecma/base" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/ecma/builtin-objects" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/ecma/builtin-objects/typedarray" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/ecma/operations" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/include" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/jcontext" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/jmem" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/jrt" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/lit" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/parser/js" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/parser/regexp" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/vm" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-port/default/include" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 jerry-snapshot' />
+					<CompileFile command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="jerry-snapshot/fast">
+				<Option output="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/bin/jerry-snapshot.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/bin/" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option='-DJERRY_COMMIT_HASH=&quot; ()&quot;' />
+					<Add option="-DJERRY_NDEBUG" />
+					<Add option="-DJERRY_CPOINTER_32_BIT" />
+					<Add option="-DJERRY_ENABLE_ERROR_MESSAGES" />
+					<Add option="-DJERRY_ENABLE_LINE_INFO" />
+					<Add option="-DPARSER_DUMP_BYTE_CODE" />
+					<Add option="-DCONFIG_DISABLE_ES2015" />
+					<Add option="-DREGEXP_DUMP_BYTE_CODE" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_EXEC" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_SAVE" />
+					<Add option="-DCONFIG_MEM_HEAP_AREA_SIZE=5242880" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/api" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/debugger" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/ecma/base" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/ecma/builtin-objects" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/ecma/builtin-objects/typedarray" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/ecma/operations" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/include" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/jcontext" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/jmem" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/jrt" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/lit" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/parser/js" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/parser/regexp" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-core/vm" />
+					<Add directory="C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/jerry-port/default/include" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 jerry-snapshot/fast' />
+					<CompileFile command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;C:/mozilla-build/msys/home/Shcherbatykh/jerryscript/build/jerry-main/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="win32_exe">
+				<Option output="jerry-main" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-std=c99" />
+					<Add option="-m32" />
+					<Add directory="../../jerry-core/include" />
+					<Add directory="../../jerry-ext/include" />
+					<Add directory="../../jerry-port/default/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-O3" />
+					<Add option="-s" />
+					<Add option="-static-libgcc" />
+					<Add option="-m32" />
+					<Add library="../lib/libjerry-core.a" />
+					<Add library="../lib/libjerry-ext.a" />
+					<Add library="../lib/libjerry-port-default.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../../jerry-main/cli.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../jerry-main/cli.h" />
+		<Unit filename="../../jerry-main/main-unix.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

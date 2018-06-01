@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="jerry-port-default" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="CMake Files\;CMake Files\jerry-core\;CMake Files\jerry-port\;CMake Files\jerry-port\default\;CMake Files\jerry-ext\;CMake Files\jerry-main\;" />
+		<Build>
+			<Target title="all">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 all' />
+					<CompileFile command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="jerry-port-default">
+				<Option output="D:/jerryscript/build/lib/libjerry-port-default.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="./" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-D_BSD_SOURCE" />
+					<Add option="-D_DEFAULT_SOURCE" />
+					<Add option="-DJERRY_NDEBUG" />
+					<Add option="-DJERRY_CPOINTER_32_BIT" />
+					<Add option="-DPARSER_DUMP_BYTE_CODE" />
+					<Add option="-DCONFIG_DISABLE_ES2015" />
+					<Add option="-DREGEXP_DUMP_BYTE_CODE" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_EXEC" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_SAVE" />
+					<Add option="-DJERRY_VM_EXEC_STOP" />
+					<Add option="-DCONFIG_MEM_HEAP_AREA_SIZE=5242880" />
+					<Add directory="D:/jerryscript/jerry-port/default/include" />
+					<Add directory="D:/jerryscript/jerry-core/include" />
+					<Add directory="D:/jerryscript/jerry-ext/include" />
+					<Add directory="D:/jerryscript/jerry-core" />
+					<Add directory="D:/jerryscript/jerry-core/api" />
+					<Add directory="D:/jerryscript/jerry-core/debugger" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/base" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/builtin-objects" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/builtin-objects/typedarray" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/operations" />
+					<Add directory="D:/jerryscript/jerry-core/jcontext" />
+					<Add directory="D:/jerryscript/jerry-core/jmem" />
+					<Add directory="D:/jerryscript/jerry-core/jrt" />
+					<Add directory="D:/jerryscript/jerry-core/lit" />
+					<Add directory="D:/jerryscript/jerry-core/parser/js" />
+					<Add directory="D:/jerryscript/jerry-core/parser/regexp" />
+					<Add directory="D:/jerryscript/jerry-core/vm" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 jerry-port-default' />
+					<CompileFile command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="jerry-port-default/fast">
+				<Option output="D:/jerryscript/build/lib/libjerry-port-default.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="./" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-D_BSD_SOURCE" />
+					<Add option="-D_DEFAULT_SOURCE" />
+					<Add option="-DJERRY_NDEBUG" />
+					<Add option="-DJERRY_CPOINTER_32_BIT" />
+					<Add option="-DPARSER_DUMP_BYTE_CODE" />
+					<Add option="-DCONFIG_DISABLE_ES2015" />
+					<Add option="-DREGEXP_DUMP_BYTE_CODE" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_EXEC" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_SAVE" />
+					<Add option="-DJERRY_VM_EXEC_STOP" />
+					<Add option="-DCONFIG_MEM_HEAP_AREA_SIZE=5242880" />
+					<Add directory="D:/jerryscript/jerry-port/default/include" />
+					<Add directory="D:/jerryscript/jerry-core/include" />
+					<Add directory="D:/jerryscript/jerry-ext/include" />
+					<Add directory="D:/jerryscript/jerry-core" />
+					<Add directory="D:/jerryscript/jerry-core/api" />
+					<Add directory="D:/jerryscript/jerry-core/debugger" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/base" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/builtin-objects" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/builtin-objects/typedarray" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/operations" />
+					<Add directory="D:/jerryscript/jerry-core/jcontext" />
+					<Add directory="D:/jerryscript/jerry-core/jmem" />
+					<Add directory="D:/jerryscript/jerry-core/jrt" />
+					<Add directory="D:/jerryscript/jerry-core/lit" />
+					<Add directory="D:/jerryscript/jerry-core/parser/js" />
+					<Add directory="D:/jerryscript/jerry-core/parser/regexp" />
+					<Add directory="D:/jerryscript/jerry-core/vm" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 jerry-port-default/fast' />
+					<CompileFile command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="jerry-port-default-minimal">
+				<Option output="D:/jerryscript/build/lib/libjerry-port-default-minimal.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="./" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-D_BSD_SOURCE" />
+					<Add option="-D_DEFAULT_SOURCE" />
+					<Add option="-DDISABLE_EXTRA_API" />
+					<Add option="-DJERRY_NDEBUG" />
+					<Add option="-DJERRY_CPOINTER_32_BIT" />
+					<Add option="-DPARSER_DUMP_BYTE_CODE" />
+					<Add option="-DCONFIG_DISABLE_ES2015" />
+					<Add option="-DREGEXP_DUMP_BYTE_CODE" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_EXEC" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_SAVE" />
+					<Add option="-DJERRY_VM_EXEC_STOP" />
+					<Add option="-DCONFIG_MEM_HEAP_AREA_SIZE=5242880" />
+					<Add directory="D:/jerryscript/jerry-port/default/include" />
+					<Add directory="D:/jerryscript/jerry-core/include" />
+					<Add directory="D:/jerryscript/jerry-ext/include" />
+					<Add directory="D:/jerryscript/jerry-core" />
+					<Add directory="D:/jerryscript/jerry-core/api" />
+					<Add directory="D:/jerryscript/jerry-core/debugger" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/base" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/builtin-objects" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/builtin-objects/typedarray" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/operations" />
+					<Add directory="D:/jerryscript/jerry-core/jcontext" />
+					<Add directory="D:/jerryscript/jerry-core/jmem" />
+					<Add directory="D:/jerryscript/jerry-core/jrt" />
+					<Add directory="D:/jerryscript/jerry-core/lit" />
+					<Add directory="D:/jerryscript/jerry-core/parser/js" />
+					<Add directory="D:/jerryscript/jerry-core/parser/regexp" />
+					<Add directory="D:/jerryscript/jerry-core/vm" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 jerry-port-default-minimal' />
+					<CompileFile command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="jerry-port-default-minimal/fast">
+				<Option output="D:/jerryscript/build/lib/libjerry-port-default-minimal.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="./" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-D_BSD_SOURCE" />
+					<Add option="-D_DEFAULT_SOURCE" />
+					<Add option="-DDISABLE_EXTRA_API" />
+					<Add option="-DJERRY_NDEBUG" />
+					<Add option="-DJERRY_CPOINTER_32_BIT" />
+					<Add option="-DPARSER_DUMP_BYTE_CODE" />
+					<Add option="-DCONFIG_DISABLE_ES2015" />
+					<Add option="-DREGEXP_DUMP_BYTE_CODE" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_EXEC" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_SAVE" />
+					<Add option="-DJERRY_VM_EXEC_STOP" />
+					<Add option="-DCONFIG_MEM_HEAP_AREA_SIZE=5242880" />
+					<Add directory="D:/jerryscript/jerry-port/default/include" />
+					<Add directory="D:/jerryscript/jerry-core/include" />
+					<Add directory="D:/jerryscript/jerry-ext/include" />
+					<Add directory="D:/jerryscript/jerry-core" />
+					<Add directory="D:/jerryscript/jerry-core/api" />
+					<Add directory="D:/jerryscript/jerry-core/debugger" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/base" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/builtin-objects" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/builtin-objects/typedarray" />
+					<Add directory="D:/jerryscript/jerry-core/ecma/operations" />
+					<Add directory="D:/jerryscript/jerry-core/jcontext" />
+					<Add directory="D:/jerryscript/jerry-core/jmem" />
+					<Add directory="D:/jerryscript/jerry-core/jrt" />
+					<Add directory="D:/jerryscript/jerry-core/lit" />
+					<Add directory="D:/jerryscript/jerry-core/parser/js" />
+					<Add directory="D:/jerryscript/jerry-core/parser/regexp" />
+					<Add directory="D:/jerryscript/jerry-core/vm" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed" />
+					<Add directory="C:/Program Files (x86)/CodeBlocks/mingw/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 jerry-port-default-minimal/fast' />
+					<CompileFile command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/PROGRA~2/CODEBL~1/mingw/bin/mingw32-make.exe -f &quot;D:/jerryscript/build/jerry-port/default/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="win32_dll">
+				<Option output="jerry-port-default" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="1" extension_auto="1" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-flto" />
+					<Add option="-std=c99" />
+					<Add option="-fPIC" />
+					<Add option="-m32" />
+					<Add option="-DJERRY_NDEBUG" />
+					<Add option="-DJERRY_ENABLE_ERROR_MESSAGES" />
+					<Add option="-DJERRY_CPOINTER_32_BIT" />
+					<Add option="-DPARSER_DUMP_BYTE_CODE" />
+					<Add option="-DCONFIG_ENABLE_ES2015" />
+					<Add option="-DREGEXP_DUMP_BYTE_CODE" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_EXEC" />
+					<Add option="-DJERRY_ENABLE_SNAPSHOT_SAVE" />
+					<Add option="-DJERRY_VM_EXEC_STOP" />
+					<Add option="-DCONFIG_MEM_HEAP_AREA_SIZE=5242880" />
+					<Add option="-DJERRY_ENABLE_LINE_INFO" />
+					<Add option="-DJMEM_STATS" />
+					<Add directory="../../../jerry-core/include" />
+					<Add directory="../../../jerry-port/default/include" />
+					<Add directory="../../../jerry-core/debugger" />
+					<Add directory="../../../jerry-core/ecma/base" />
+					<Add directory="../../../jerry-core" />
+					<Add directory="../../../jerry-core/jrt" />
+					<Add directory="../../../jerry-core/lit" />
+					<Add directory="../../../jerry-core/jmem" />
+					<Add directory="../../../jerry-ext/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-O3" />
+					<Add option="-flto" />
+					<Add option="-s" />
+					<Add option="-static-libgcc" />
+					<Add option="-m32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../../../CMakeLists.txt">
+			<Option virtualFolder="CMake Files/" />
+			<Option target="all" />
+			<Option target="jerry-port-default" />
+			<Option target="jerry-port-default/fast" />
+			<Option target="jerry-port-default-minimal" />
+			<Option target="jerry-port-default-minimal/fast" />
+		</Unit>
+		<Unit filename="../../../jerry-core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/jerry-core/" />
+			<Option target="all" />
+			<Option target="jerry-port-default" />
+			<Option target="jerry-port-default/fast" />
+			<Option target="jerry-port-default-minimal" />
+			<Option target="jerry-port-default-minimal/fast" />
+		</Unit>
+		<Unit filename="../../../jerry-ext/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/jerry-ext/" />
+			<Option target="all" />
+			<Option target="jerry-port-default" />
+			<Option target="jerry-port-default/fast" />
+			<Option target="jerry-port-default-minimal" />
+			<Option target="jerry-port-default-minimal/fast" />
+		</Unit>
+		<Unit filename="../../../jerry-main/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/jerry-main/" />
+			<Option target="all" />
+			<Option target="jerry-port-default" />
+			<Option target="jerry-port-default/fast" />
+			<Option target="jerry-port-default-minimal" />
+			<Option target="jerry-port-default-minimal/fast" />
+		</Unit>
+		<Unit filename="../../../jerry-port/default/CMakeLists.txt">
+			<Option virtualFolder="CMake Files/jerry-port/default/" />
+			<Option target="all" />
+			<Option target="jerry-port-default" />
+			<Option target="jerry-port-default/fast" />
+			<Option target="jerry-port-default-minimal" />
+			<Option target="jerry-port-default-minimal/fast" />
+		</Unit>
+		<Unit filename="../../../jerry-port/default/default-date.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-port-default" />
+			<Option target="jerry-port-default-minimal" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../../jerry-port/default/default-debugger.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-port-default" />
+			<Option target="jerry-port-default-minimal" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../../jerry-port/default/default-external-context.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-port-default" />
+			<Option target="jerry-port-default-minimal" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../../jerry-port/default/default-fatal.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-port-default" />
+			<Option target="jerry-port-default-minimal" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../../jerry-port/default/default-io.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-port-default" />
+			<Option target="jerry-port-default-minimal" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Unit filename="../../../jerry-port/default/defaultx-handler.c">
+			<Option compilerVar="CC" />
+			<Option target="jerry-port-default" />
+			<Option target="jerry-port-default-minimal" />
+			<Option target="win32_dll" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,9 @@
+name "jerry_test"
+description "A minimal D application."
+authors "tai-prg3"
+copyright "Copyright © 2018, tai-prg3"
+license "proprietary"
+
+targetPath "bin"
+workingDirectory "bin"
+libs "lib/libjerry-core" "lib/libjerry-ext" "lib/libjerry-port-default"
