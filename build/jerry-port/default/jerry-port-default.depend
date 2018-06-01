@@ -101,3 +101,105 @@
 1527743237 d:\jerryscript\jerry-ext\include\jerryscript-ext\handler.h
 	"jerryscript.h"
 
+1527855428 source:c:\git_local\bin\jerryscript\jerry-port\default\default-date.c
+	<sys/time.h>
+	"jerryscript-port.h"
+	"jerryscript-port-default.h"
+
+1527855427 c:\git_local\bin\jerryscript\jerry-core\include\jerryscript-port.h
+	<stdbool.h>
+	<stdint.h>
+	<stdio.h>
+	"jerryscript-compiler.h"
+
+1527855427 c:\git_local\bin\jerryscript\jerry-core\include\jerryscript-compiler.h
+
+1527855428 c:\git_local\bin\jerryscript\jerry-port\default\include\jerryscript-port-default.h
+	"jerryscript.h"
+	"jerryscript-port.h"
+	<stdbool.h>
+
+1527855427 c:\git_local\bin\jerryscript\jerry-core\include\jerryscript.h
+	"jerryscript-core.h"
+	"jerryscript-debugger.h"
+	"jerryscript-snapshot.h"
+
+1527855427 c:\git_local\bin\jerryscript\jerry-core\include\jerryscript-core.h
+	<stdbool.h>
+	<stddef.h>
+	<stdint.h>
+	"jerryscript-compiler.h"
+
+1527855427 c:\git_local\bin\jerryscript\jerry-core\include\jerryscript-debugger.h
+	<stdbool.h>
+
+1527855427 c:\git_local\bin\jerryscript\jerry-core\include\jerryscript-snapshot.h
+	"jerryscript-core.h"
+
+1527855428 source:c:\git_local\bin\jerryscript\jerry-port\default\default-debugger.c
+	<time.h>
+	<unistd.h>
+	"jerryscript-port.h"
+	"jerryscript-port-default.h"
+
+1527855428 source:c:\git_local\bin\jerryscript\jerry-port\default\default-external-context.c
+	"jerryscript-port.h"
+	"jerryscript-port-default.h"
+
+1527855428 source:c:\git_local\bin\jerryscript\jerry-port\default\default-fatal.c
+	<stdlib.h>
+	"jerryscript-port.h"
+	"jerryscript-port-default.h"
+
+1527855428 source:c:\git_local\bin\jerryscript\jerry-port\default\default-io.c
+	<stdarg.h>
+	"jerryscript-port.h"
+	"jerryscript-port-default.h"
+	"debugger.h"
+
+1527855427 c:\git_local\bin\jerryscript\jerry-core\debugger\debugger.h
+	"debugger-ws.h"
+	"ecma-globals.h"
+
+1527855427 c:\git_local\bin\jerryscript\jerry-core\debugger\debugger-ws.h
+	"ecma-globals.h"
+
+1527855427 c:\git_local\bin\jerryscript\jerry-core\ecma\base\ecma-globals.h
+	"config.h"
+	"jrt.h"
+	"lit-magic-strings.h"
+	"jmem.h"
+
+1527855427 c:\git_local\bin\jerryscript\jerry-core\config.h
+
+1527855427 c:\git_local\bin\jerryscript\jerry-core\jrt\jrt.h
+	<stdio.h>
+	<string.h>
+	"jerryscript-port.h"
+	"jrt-types.h"
+
+1527855427 c:\git_local\bin\jerryscript\jerry-core\jrt\jrt-types.h
+	<float.h>
+	<stdbool.h>
+	<stddef.h>
+	<stdint.h>
+
+1527855428 c:\git_local\bin\jerryscript\jerry-core\lit\lit-magic-strings.h
+	"lit-globals.h"
+	"lit-magic-strings.inc.h"
+
+1527855428 c:\git_local\bin\jerryscript\jerry-core\lit\lit-globals.h
+	"jrt.h"
+
+1527855428 c:\git_local\bin\jerryscript\jerry-core\lit\lit-magic-strings.inc.h
+
+1527855427 c:\git_local\bin\jerryscript\jerry-core\jmem\jmem.h
+	"jrt.h"
+
+1527855428 source:c:\git_local\bin\jerryscript\jerry-port\default\defaultx-handler.c
+	<stdio.h>
+	"jerryscript-ext/handler.h"
+
+1527855428 c:\git_local\bin\jerryscript\jerry-ext\include\jerryscript-ext\handler.h
+	"jerryscript.h"
+

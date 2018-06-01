@@ -2,24 +2,24 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="win32_dll" />
-	<File name="..\..\jerry-core\ecma\builtin-objects\typedarray\ecma-builtin-float32array-prototype.c" open="1" top="1" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="693" topLine="23" />
-		</Cursor>
-	</File>
-	<File name="..\..\jerry-core\api\jerry-debugger.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="634" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="..\..\jerry-core\debugger\debugger-ws.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\jerry-core\debugger\debugger-ws.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="679" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="..\..\jerry-core\api\jerry-snapshot.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\jerry-core\api\jerry-debugger.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="634" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\..\jerry-core\api\jerry-snapshot.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="634" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="..\..\jerry-core\ecma\builtin-objects\typedarray\ecma-builtin-float32array-prototype.c" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="693" topLine="8" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
