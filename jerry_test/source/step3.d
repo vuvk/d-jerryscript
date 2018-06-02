@@ -17,7 +17,7 @@ void RunStep3()
      */
     writeln("\nStep 3. Execution in 'eval'-mode");
     const string script_1 = "var s = 'Hello, World!';";
-    const string script_2 = "tryser {print(s);} catch(e) {print(e.name + ' ' + e.message);}";
+    const string script_2 = "try {print(s);} catch(e) {print(e.name + ' ' + e.message);}";
 
     /* Initialize engine */
     jerry_init (jerry_init_flag_t.JERRY_INIT_EMPTY);

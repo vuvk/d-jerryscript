@@ -8,7 +8,7 @@ import handler;
 
 import util;
 
-import step0, step1, step2, step3, step4, step6;
+import step0, step1, step2, step3, step4, step6, step7, step8;
 
 void main()
 { 
@@ -18,6 +18,8 @@ void main()
 	RunStep3();
 	RunStep4();
 	RunStep6();
+	RunStep7();
+	RunStep8();
 	 
 	writeln("\n\n\nPress ENTER to exit.");
 	readln();

@@ -202,7 +202,7 @@ void print_unhandled_exception (jerry_value_t error_value) /**< error value */
 
       if (jerry_value_is_object (error_value))
       {
-            jerry_value_t stack_str = jerry_create_string (cast(const jerry_char_t*)"stack");
+            jerry_value_t stack_str = jerry_create_string (cast(const jerry_char_t*)"stack\0".ptr);
             jerry_value_t backtrace_val = jerry_get_property (error_value, stack_str);
             jerry_release_value (stack_str);
 
@@ -228,7 +228,7 @@ void print_unhandled_exception (jerry_value_t error_value) /**< error value */
 
                               if (str_size >= 256)
                               {
-                                printf ("%3u: [Backtrace string too long]\n", i);
+									printf ("%3u: [Backtrace string too long]\n", i);
                               }
                               else
                               {
@@ -268,9 +268,9 @@ void print_unhandled_exception (jerry_value_t error_value) /**< error value */
                   uint err_col = 0;
 
                   /* 1. parse column and line information */
-                  for (jerry_size_t i = 0; i < string_end; i++)
+                  for (jerry_size_t i = 0; i < string_end; ++i)
                   {
-                        if (!strncmp (cast(char*) (err_str_buf.ptr + i), "[line: ", 7))
+                        if (!strncmp (cast(char*) &(err_str_buf[i]), "[line: ", 7))
                         {
                               i += 7;
 
@@ -287,7 +287,7 @@ void print_unhandled_exception (jerry_value_t error_value) /**< error value */
 
                               err_line = cast(uint) strtol (num_str.ptr, null, 10);
 
-                              if (strncmp (cast(char *) (err_str_buf.ptr + i), ", column: ", 10))
+                              if (strncmp (cast(char*) &(err_str_buf[i]), ", column: ", 10))
                               {
                                     break; /* wrong position info format */
                               }
