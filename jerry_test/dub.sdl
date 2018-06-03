@@ -1,8 +1,8 @@
 name "jerry_test"
-description "A minimal D application."
-authors "tai-prg3"
-copyright "Copyright © 2018, tai-prg3"
-license "proprietary"
+description "Tests for using of JerryScript"
+authors "Anton 'Vuvk' Shcherbatykh"
+copyright "Copyright © 2018, vuvk"
+license "Apache 2.0"
 
 targetPath "bin"
 workingDirectory "bin"
