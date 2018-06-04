@@ -7,7 +7,7 @@ import core.stdc.stdlib;
 
 import jerryscript_core;
 import jerryscript_port;
-import jerry_snapshot;
+import jerryscript_snapshot;
 import handler;
 
 import util;

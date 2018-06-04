@@ -13,7 +13,7 @@
  * limitations under the License.
  */
  
-module jerry_snapshot;
+module jerryscript_snapshot;
 
 import jerryscript_core;
 import jerryscript_port;
