@@ -445,7 +445,7 @@ void jerry_release_value (jerry_value_t value);
  * Create functions of API values.
  */
 jerry_value_t jerry_create_array (uint size);
-jerry_value_t jerry_create_ubyteean (ubyte value);
+jerry_value_t jerry_create_boolean (ubyte value);
 jerry_value_t jerry_create_error (jerry_error_t error_type, const(jerry_char_t)* message_p);
 jerry_value_t jerry_create_error_sz (
     jerry_error_t error_type,

@@ -26,8 +26,8 @@ extern (C)
     jerry_value_t
     get_msg_handler (const jerry_value_t func_value, /**< function object */
                      const jerry_value_t this_value, /**< this arg */
-                     const jerry_value_t* args_p, /**< function arguments */
-                     const jerry_length_t args_cnt) /**< number of function arguments */
+                     const jerry_value_t* args_p,    /**< function arguments */
+                     const jerry_length_t args_cnt)  /**< number of function arguments */
     {
         return jerry_create_string (cast(const jerry_char_t*)(myStruct.msg));
     } /* get_msg_handler */
