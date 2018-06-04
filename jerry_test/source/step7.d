@@ -20,36 +20,36 @@ add_handler (const jerry_value_t func_value, /**< function object */
              const jerry_value_t *args_p, /**< function arguments */
              const jerry_length_t args_cnt) /**< number of function arguments */
 {
-  /* Get 'this.x' */
-  jerry_value_t prop_name = jerry_create_string (cast(const jerry_char_t*)"x");
-  jerry_value_t x_val = jerry_get_property (this_val, prop_name);
+    /* Get 'this.x' */
+    jerry_value_t prop_name = jerry_create_string (cast(const jerry_char_t*)"x");
+    jerry_value_t x_val = jerry_get_property (this_val, prop_name);
 
-  if (!jerry_value_is_error (x_val))
-  {
-    /* Convert Jerry API values to double */
-    double x = jerry_get_number_value (x_val);
-    double d = jerry_get_number_value (*args_p);
+    if (!jerry_value_is_error (x_val))
+    {
+        /* Convert Jerry API values to double */
+        double x = jerry_get_number_value (x_val);
+        double d = jerry_get_number_value (*args_p);
 
-    /* Add the parameter to 'x' */
-    jerry_value_t res_val = jerry_create_number (x + d);
+        /* Add the parameter to 'x' */
+        jerry_value_t res_val = jerry_create_number (x + d);
 
-    /* Set the new value of 'this.x' */
-    jerry_set_property (this_val, prop_name, res_val);
-    jerry_release_value (res_val);
-  }
+        /* Set the new value of 'this.x' */
+        jerry_set_property (this_val, prop_name, res_val);
+        jerry_release_value (res_val);
+    }
 
-  jerry_release_value (x_val);
-  jerry_release_value (prop_name);
+    jerry_release_value (x_val);
+    jerry_release_value (prop_name);
 
-  return jerry_create_undefined ();
+    return jerry_create_undefined ();
 } /* add_handler */
 
 
 void RunStep7()
 {
-	/**
-	 *  Step 7. Extending JS Objects with native functions
-	 */
+    /**
+     *  Step 7. Extending JS Objects with native functions
+     */
     writeln("\nStep 7. Extending JS Objects with native functions");
   
     /* Initialize engine */

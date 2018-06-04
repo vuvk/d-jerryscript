@@ -12,9 +12,9 @@ import util;
 
 void RunStep8()
 {
-	/**
-	 *  Step 8. Changing the seed of pseudorandom generated numbers
-	 */
+    /**
+     *  Step 8. Changing the seed of pseudorandom generated numbers
+     */
     writeln("\nStep 8. Changing the seed of pseudorandom generated numbers");
 
     /* Initialize srand value */

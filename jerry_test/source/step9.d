@@ -14,9 +14,9 @@ import util;
 
 void RunStep9()
 {
-	/**
-	 *  Step 9. Save and run snapshot
-	 */
+    /**
+     *  Step 9. Save and run snapshot
+     */
     writeln("\nStep 9. Save and run snapshot");
 
     jerry_init (jerry_init_flag_t.JERRY_INIT_EMPTY);
