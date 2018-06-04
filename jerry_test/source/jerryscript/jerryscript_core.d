@@ -360,7 +360,7 @@ enum jerry_type_t
     JERRY_TYPE_NONE = 0u, /**< no type information */
     JERRY_TYPE_UNDEFINED = 1, /**< undefined type */
     JERRY_TYPE_NULL = 2, /**< null type */
-    JERRY_TYPE_ubyteEAN = 3, /**< ubyteean type */
+    JERRY_TYPE_BOOLEAN = 3, /**< boolean type */
     JERRY_TYPE_NUMBER = 4, /**< number type */
     JERRY_TYPE_STRING = 5, /**< string type */
     JERRY_TYPE_OBJECT = 6, /**< object type */
@@ -425,7 +425,7 @@ uint jerry_get_array_length (const jerry_value_t value);
 /**
  * Converters of 'jerry_value_t'.
  */
-ubyte jerry_value_to_ubyteean (const jerry_value_t value);
+ubyte jerry_value_to_boolean (const jerry_value_t value);
 jerry_value_t jerry_value_to_number (const jerry_value_t value);
 jerry_value_t jerry_value_to_object (const jerry_value_t value);
 jerry_value_t jerry_value_to_primitive (const jerry_value_t value);
