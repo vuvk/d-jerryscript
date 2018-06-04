@@ -17,8 +17,8 @@ void RunStep0()
 	immutable string[] featuresNames = [
 		"JERRY_FEATURE_CPOINTER_32_BIT", 	/**< 32 bit compressed pointers */
 		"JERRY_FEATURE_ERROR_MESSAGES ", 	/**< error messages */
-		"JERRY_FEATURE_JS_PARSER	  ", 	/**< js-parser */
-		"JERRY_FEATURE_MEM_STATS	  ", 	/**< memory statistics */
+		"JERRY_FEATURE_JS_PARSER      ", 	/**< js-parser */
+		"JERRY_FEATURE_MEM_STATS      ", 	/**< memory statistics */
 		"JERRY_FEATURE_PARSER_DUMP    ", 	/**< parser byte-code dumps */
 		"JERRY_FEATURE_REGEXP_DUMP    ", 	/**< regexp byte-code dumps */
 		"JERRY_FEATURE_SNAPSHOT_SAVE  ", 	/**< saving snapshot files */
@@ -34,9 +34,9 @@ void RunStep0()
 	];
 	for (int i = 0; i < featuresNames.length; ++i)
 	{
-		write(featuresNames[i] ~ '\t');
-		(jerry_is_feature_enabled(cast(jerry_feature_t)i)) 	? 
-			writeln ("enabled")   							: 
-			writeln ("not enabled");
+        write(featuresNames[i] ~ '\t');
+        (jerry_is_feature_enabled(cast(jerry_feature_t)i))  ?
+            writeln ("enabled")                             :
+            writeln ("not enabled");
 	}
 }

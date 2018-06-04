@@ -15,21 +15,21 @@ void RunStep2()
 	/**
 	 * Step 2. Split engine initialization and script execution
 	 */
-	writeln("\nStep 2. Split engine initialization and script execution");
+    writeln("\nStep 2. Split engine initialization and script execution");
     string script = "printir('Hello, World!');";
-	uint script_size = script.length;
+    uint script_size = script.length;
 
-	/* Initialize engine */
-	jerry_init(jerry_init_flag_t.JERRY_INIT_EMPTY);
+    /* Initialize engine */
+    jerry_init(jerry_init_flag_t.JERRY_INIT_EMPTY);
 
-	/* Register 'print' function from the extensions */
-	jerryx_handler_register_global (cast(ubyte*)("print".ptr), &jerryx_handler_print);
+    /* Register 'print' function from the extensions */
+    jerryx_handler_register_global (cast(ubyte*)("print".ptr), &jerryx_handler_print);
 
     /* Setup Global scope code */
     jerry_value_t parsed_code = jerry_parse (null, 0, cast(ubyte*)script.ptr, script_size, jerry_parse_opts_t.JERRY_PARSE_STRICT_MODE);
-	//writeln(script);
+    //writeln(script);
 	
-	jerry_value_t ret_value;
+    jerry_value_t ret_value;
 
 	if (!jerry_value_is_error(parsed_code))
 	{
